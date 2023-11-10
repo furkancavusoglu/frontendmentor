@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <header class="result">Your Result</header>
+        <div class="result-number">
+          <div class="result-number-first">76</div>
+          <div class="result-number-second">of 100</div>
+        </div>
+        <div class="sub-result">
+          <div class="sub-result-number">Great</div>
+          <div class="sub-result-details">
+            You scored higher than 65% of the people who have taken these tests.
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <header class="summary">Summary</header>
+        <article class="stats">
+          <div class="reaction">
+            <div class="stats-left">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+              <div class="reaction-text">Reaction</div>
+            </div>
+            <div class="reaction-number">80 / 100</div>
+          </div>
+          <div class="memory">
+            <div class="stats-left">
+              <img src="./assets/images/icon-memory.svg" alt="memory" />
+              <div class="memory-text">Memory</div>
+            </div>
+            <div class="memory-number">92 / 100</div>
+          </div>
+          <div class="verbal">
+            <div class="stats-left">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+              <div class="verbal-text">Verbal</div>
+            </div>
+            <div class="verbal-number">61 / 100</div>
+          </div>
+          <div class="visual">
+            <div class="stats-left">
+              <img src="./assets/images/icon-visual.svg" alt="visual" />
+              <div class="visual-text">Visual</div>
+            </div>
+            <div class="visual-number">72 / 100</div>
+          </div>
+        </article>
+        <button>Continue</button>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

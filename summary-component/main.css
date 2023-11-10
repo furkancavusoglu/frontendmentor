@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+body {
+  height: 100vh;
+  font-family: "CustomFont", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  text-align: center;
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.result {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+}
+
+.result-number {
+  width: 65%;
+  height: 45%;
+  background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.result-number-first {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.result-number-second {
+  color: var(--light-lavender);
+  font-size: 0.7rem;
+}
+
+.sub-result {
+  text-align: center;
+}
+
+.sub-result-number {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.sub-result-details {
+  color: var(--light-lavender);
+  text-align: center;
+  font-size: 0.8rem;
+  width: 75%;
+  margin: 0px auto;
+}
+
+.right {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.summary {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stats div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction-text {
+  color: var(--light-red);
+}
