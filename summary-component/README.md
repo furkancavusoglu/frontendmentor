@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/results-summary-component-solution-vy4aNxSPQP)
-- Live Site URL: [Vercel](frontendmentor-qa1gohlbw-cfurkannn-gmailcom.vercel.app)
+- Live Site URL: [Vercel](https://frontendmentor-omega-seven.vercel.app)
 
 ## My process
 
