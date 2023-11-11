@@ -12,9 +12,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,14 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
-![Web](./screenshot-web.jpg)
+![Web](./screenshot-web.png)
 
-![Mobile](./screenshot-mobile.jpg)
+![Mobile](./screenshot-mobile.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
 
 ### Built with
 
