@@ -29,39 +29,41 @@ body {
 
 main {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  width: 70%;
-  height: 50%;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  height: 50%;
+  width: 60%;
 }
 
 .left {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   background-image: linear-gradient(
     var(--light-slate-blue),
     var(--light-royal-blue)
   );
   border-radius: 15px;
-  padding: 20px;
+  width: 50%;
 }
 
 .result {
-  color: hsl(241, 100%, 89%);
+  color: var(--light-lavender);
   font-weight: 700;
 }
 
 .result-number {
-  width: 65%;
-  height: 45%;
+  width: 50%;
+  height: 35%;
   background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px auto;
 }
 
 .result-number-first {
@@ -91,26 +93,67 @@ main {
   text-align: center;
   font-size: 0.8rem;
   width: 75%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .right {
   background-color: var(--white);
   border-radius: 15px;
-  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .summary {
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 10px 0 0 10%;
+  align-self: flex-start;
+}
+
+.stats {
+  width: 80%;
 }
 
 .stats div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
   border-radius: 10px;
+}
+
+.stats-left > * {
+  margin-left: 10px;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  height: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  text-align: baseline;
+}
+
+.reaction-text,
+.memory-text,
+.verbal-text,
+.visual-text {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.hundred {
+  color: var(--light-lavender);
+  margin-left: 5px;
+  font-size: 0.8rem;
 }
 
 .reaction {
@@ -119,4 +162,46 @@ main {
 
 .reaction-text {
   color: var(--light-red);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory-text {
+  color: var(--orangey-yellow);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal-text {
+  color: var(--green-teal);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual-text {
+  color: var(--cobalt-blue);
+}
+
+button {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
 }
