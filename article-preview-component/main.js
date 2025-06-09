@@ -1,8 +1,10 @@
 function toggleSharePopup() {
   const sharePopup = document.querySelector(".share-popup");
   const shareButton = document.querySelector(".share-button");
+  const sharePopupMobile = document.querySelector(".share-popup-mobile");
   shareButton.classList.toggle("active");
   sharePopup.classList.toggle("active");
+  sharePopupMobile.classList.toggle("active");
 }
 
 function closeSharePopup() {
@@ -16,6 +18,7 @@ function closeSharePopup() {
     ) {
       sharePopup.classList.remove("active");
       shareButton.classList.remove("active");
+      sharePopupMobile.classList.remove("active");
     }
   });
 
@@ -23,6 +26,7 @@ function closeSharePopup() {
     if (event.key === "Escape") {
       sharePopup.classList.remove("active");
       shareButton.classList.remove("active");
+      sharePopupMobile.classList.remove("active");
     }
   });
 }
